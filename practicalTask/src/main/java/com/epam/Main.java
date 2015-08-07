@@ -1,8 +1,13 @@
 package com.epam;
 
+import com.epam.entity.Event;
 import com.epam.entity.User;
+import com.epam.repository.event.EventDAOImpl;
+import com.epam.repository.event.api.EventDAO;
 import com.epam.service.auditorium.api.AuditoriumService;
 import com.epam.service.user.api.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -21,5 +26,8 @@ public class Main {
         userService.register(user);
         System.out.println(userService.getById(1));
         System.out.println(applicationContext.getBean(AuditoriumService.class).getAuditoriums());
+        Event event = (Event) applicationContext.getBean("event_1");
+        EventDAO eventDAO = (EventDAO) applicationContext.getBean("eventDAO");
+        eventDAO.add(event);
     }
 }
