@@ -26,5 +26,7 @@ public interface BookingService {
      */
     List<Ticket> getTicketsForEvent(Event event, Date date);
 
-    List<Ticket> bookTicket(User user,Ticket ticket);
+    boolean bookTicket(Ticket ticket);
+
+    List<Ticket> getBookedTickets();
 }

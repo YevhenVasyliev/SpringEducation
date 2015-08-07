@@ -37,20 +37,28 @@ public class AuditoriumDAOImpl implements AuditoriumDAO {
         }
         return null;
     }
-// TODO refactoring
+
     @Override
     public List<Seat> getVipSeats(long auditoriumId) {
         List<Seat> seats = new ArrayList<>();
         for (Auditorium auditorium : auditoriums) {
             if (auditorium.getId() == auditoriumId) {
-                for (Seat seat : auditorium.getSeats()) {
-                    if (seat.isVip()) {
-                        seats.add(seat);
-                    }
+                Seat seat = getVipSeat(auditorium);
+                if (seat != null) {
+                    seats.add(seat);
                 }
             }
         }
         return seats;
+    }
+
+    private Seat getVipSeat(Auditorium auditorium) {
+        for (Seat seat : auditorium.getSeats()) {
+            if (seat.isVip()) {
+                return seat;
+            }
+        }
+        return null;
     }
 
 }

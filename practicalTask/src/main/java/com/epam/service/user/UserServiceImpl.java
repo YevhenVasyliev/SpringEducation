@@ -41,8 +41,4 @@ public class UserServiceImpl implements UserService {
         return userDAO.getUsersByFirstName(firstName);
     }
 
-    @Override
-    public List<Ticket> getBookedTickets() {
-        return ticketDAO.getAllTicket();
-    }
 }

@@ -20,7 +20,6 @@ public class Main {
         User user = (User) applicationContext.getBean("user_1");
         userService.register(user);
         System.out.println(userService.getById(1));
-        System.out.println(userService.getBookedTickets().size());
         System.out.println(applicationContext.getBean(AuditoriumService.class).getAuditoriums());
     }
 }

@@ -18,6 +18,12 @@ public class BookingServiceImpl implements BookingService {
     @Autowired
     private TicketDAO ticketDAO;
 
+    private List<Ticket> bookedTicket;
+
+    public BookingServiceImpl() {
+        bookedTicket = new ArrayList<>();
+    }
+
     @Override
     public Map<Ticket, Double> getTicketPrice(Event event, Date date, List<Seat> seats, User user) {
         List<Ticket> tickets= ticketDAO.getAllTicket();
@@ -35,15 +41,22 @@ public class BookingServiceImpl implements BookingService {
     @Override
     public List<Ticket> getTicketsForEvent(Event event, Date date) {
         List<Ticket> tickets = ticketDAO.getAllTicket();
-        List<Ticket> ticketsForEvent = new ArrayList<>();
+        List<Ticket> purchasedTicketsForEvent = new ArrayList<>();
         for (Ticket ticket : tickets) {
-
+            if (ticket.getIdEvent() == event.getId() && ticket.getDate().equals(date)) {
+                purchasedTicketsForEvent.add(ticket);
+            }
         }
-        return null;
+        return purchasedTicketsForEvent;
     }
 
     @Override
-    public List<Ticket> bookTicket(User user, Ticket ticket) {
+    public boolean bookTicket(Ticket ticket) {
+        return bookedTicket.add(ticket);
+    }
+
+    @Override
+    public List<Ticket> getBookedTickets() {
         return null;
     }
 

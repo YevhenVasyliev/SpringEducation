@@ -18,6 +18,4 @@ public interface UserService {
 
     List<User> getUsersByFirstName(String firstName);
 
-    List<Ticket> getBookedTickets();
-
 }

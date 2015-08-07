@@ -10,30 +10,45 @@
        <context:annotation-config></context:annotation-config>
        <context:component-scan base-package="com.epam"/>
 
+       <!--Create user-->
        <bean id="user_1" class="com.epam.entity.User">
               <constructor-arg value="1"/>
               <constructor-arg type="java.lang.String" value="Yevhen"/>
               <constructor-arg type="java.lang.String" value="Vasyliev"/>
               <constructor-arg type="java.lang.String" value="vasyliev@email.com"/>
        </bean>
+       <bean id="user_2" class="com.epam.entity.User">
+              <constructor-arg value="2"/>
+              <constructor-arg type="java.lang.String" value="Viet"/>
+              <constructor-arg type="java.lang.String" value="Nguen"/>
+              <constructor-arg type="java.lang.String" value="nguen@email.com"/>
+       </bean>
+
+       <!--Create seats -->
+       <bean id="seat_1" class="com.epam.entity.Seat">
+              <constructor-arg value="1"/>
+              <constructor-arg value="1"/>
+              <constructor-arg value="true"/>
+       </bean>
+       <bean id="seat_2" class="com.epam.entity.Seat">
+              <constructor-arg value="2"/>
+              <constructor-arg value="2"/>
+              <constructor-arg value="false"/>
+       </bean>
+
+       <!--Create Auditorium-->
        <bean id="auditorium_1" class="com.epam.entity.Auditorium">
               <constructor-arg value="1"/>
-              <constructor-arg value="Princeton"/>
+              <constructor-arg type="java.lang.String" value="Princeton"/>
               <constructor-arg>
                      <list>
-                            <value>1</value>
-                            <value>2</value>
-                            <value>3</value>
-                     </list>
-              </constructor-arg>
-              <constructor-arg>
-                     <list>
-                            <value>4</value>
-                            <value>5</value>
-                            <value>6</value>
+                            <ref bean="seat_1"/>
+                            <ref bean="seat_2"/>
                      </list>
               </constructor-arg>
        </bean>
+
+       <!--Create event-->
        <bean id="event_1" class="com.epam.entity.Event">
               <constructor-arg value="1"/>
               <constructor-arg type="java.lang.String" value="date of birth"/>
@@ -48,6 +63,31 @@
               <constructor-arg value="HIGHT"/>
        </bean>
 
+       <!--Create Ticket-->
+       <bean id="ticket_1" class="com.epam.entity.Ticket">
+              <constructor-arg value="1"/>
+              <constructor-arg>
+                     <bean  class="java.util.Date">
+                            <constructor-arg value="2015"/>
+                            <constructor-arg value="07"/>
+                            <constructor-arg value="15"/>
+                     </bean>
+              </constructor-arg>
+              <constructor-arg ref="seat_1"/>
+              <constructor-arg ref="user_1"/>
+       </bean>
+
+       <!--Added to repository content for testing-->
+
+       <bean id="userDAO" class="com.epam.repository.user.UserDAOImpl">
+              <constructor-arg>
+                     <list>
+                            <ref bean="user_1"/>
+                            <ref bean="user_2"/>
+                     </list>
+              </constructor-arg>
+       </bean>
+
        <bean id="auditoriumDAO" class="com.epam.repository.auditorium.AuditoriumDAOImpl">
               <constructor-arg>
                      <list>
@@ -55,5 +95,4 @@
                      </list>
               </constructor-arg>
        </bean>
-
 </beans>
