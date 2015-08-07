@@ -3,6 +3,7 @@ package com.epam.repository.auditorium;
 import com.epam.entity.Auditorium;
 import com.epam.entity.Seat;
 import com.epam.repository.auditorium.api.AuditoriumDAO;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,10 +11,13 @@ import java.util.List;
 /**
  * @author Yevhen_Vasyliev
  */
-
+@Repository
 public class AuditoriumDAOImpl implements AuditoriumDAO {
 
     private List<Auditorium> auditoriums;
+
+    public AuditoriumDAOImpl() {
+    }
 
     public AuditoriumDAOImpl(List<Auditorium> auditoriums) {
         this.auditoriums = auditoriums;
@@ -21,7 +25,7 @@ public class AuditoriumDAOImpl implements AuditoriumDAO {
 
     @Override
     public List<Auditorium> getAuditoriums() {
-        return new ArrayList(auditoriums);
+        return new ArrayList<>(auditoriums);
     }
 
     @Override

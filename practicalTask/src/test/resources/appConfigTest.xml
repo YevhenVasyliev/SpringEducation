@@ -78,7 +78,6 @@
        </bean>
 
        <!--Added to repository content for testing-->
-
        <bean id="userDAO" class="com.epam.repository.user.UserDAOImpl">
               <constructor-arg>
                      <list>

@@ -16,9 +16,11 @@ public class UserDAOImpl implements UserDAO{
 
     private List<User> users;
 
-    @PostConstruct
-    private void init() {
-        users = new ArrayList<User>();
+    public UserDAOImpl() {
+    }
+
+    public UserDAOImpl(List<User> users) {
+        this.users = users;
     }
 
     @Override
