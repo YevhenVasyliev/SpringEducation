@@ -4,25 +4,25 @@ import com.epam.entity.Event;
 import com.epam.entity.Seat;
 import com.epam.entity.Ticket;
 import com.epam.entity.User;
+import com.epam.repository.booking.api.BookingDAO;
 import com.epam.repository.ticket.api.TicketDAO;
 import com.epam.service.booking.api.BookingService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.*;
 
 /**
  * @author Yevhen_Vasyliev
  */
+@Service
 public class BookingServiceImpl implements BookingService {
 
     @Autowired
     private TicketDAO ticketDAO;
 
-    private List<Ticket> bookedTicket;
-
-    public BookingServiceImpl() {
-        bookedTicket = new ArrayList<>();
-    }
+    @Autowired
+    private BookingDAO bookingDAO;
 
     @Override
     public Map<Ticket, Double> getTicketPrice(Event event, Date date, List<Seat> seats, User user) {
@@ -52,12 +52,12 @@ public class BookingServiceImpl implements BookingService {
 
     @Override
     public boolean bookTicket(Ticket ticket) {
-        return bookedTicket.add(ticket);
+        return bookingDAO.add(ticket);
     }
 
     @Override
     public List<Ticket> getBookedTickets() {
-        return null;
+        return bookingDAO.getAll();
     }
 
     private Map<Ticket, Double> getPriceTicket(Event event, List<Ticket> tickets) {
@@ -71,6 +71,10 @@ public class BookingServiceImpl implements BookingService {
             }
         }
         return priceOfTickets;
+    }
+
+    public int getAllBookedTicketByUser(User user){
+        return bookingDAO.getAllBookedTicketByUser(user);
     }
 
 }

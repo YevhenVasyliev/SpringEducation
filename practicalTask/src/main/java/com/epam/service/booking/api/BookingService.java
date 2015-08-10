@@ -29,4 +29,6 @@ public interface BookingService {
     boolean bookTicket(Ticket ticket);
 
     List<Ticket> getBookedTickets();
+
+    int getAllBookedTicketByUser(User user);
 }

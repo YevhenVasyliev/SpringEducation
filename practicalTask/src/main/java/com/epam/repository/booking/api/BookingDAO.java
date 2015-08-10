@@ -2,6 +2,8 @@ package com.epam.repository.booking.api;
 
 import com.epam.entity.Event;
 import com.epam.entity.Ticket;
+import com.epam.entity.User;
+import sun.util.resources.cldr.kea.TimeZoneNames_kea;
 
 import java.util.Date;
 import java.util.List;
@@ -14,4 +16,8 @@ public interface BookingDAO {
     List<Ticket> getAll();
 
     List<Ticket> getTicketsByDate(Event event, Date date);
+
+    boolean add(Ticket ticket);
+
+    public int getAllBookedTicketByUser(User user);
 }

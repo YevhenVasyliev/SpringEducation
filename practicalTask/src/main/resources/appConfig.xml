@@ -21,12 +21,23 @@
               <constructor-arg type="java.lang.String" value="Yevhen"/>
               <constructor-arg type="java.lang.String" value="Vasyliev"/>
               <constructor-arg type="java.lang.String" value="vasyliev@email.com"/>
+              <constructor-arg>
+                     <bean  class="java.util.Date">
+                            <constructor-arg value="2015"/>
+                            <constructor-arg value="07"/>
+                            <constructor-arg value="15"/>
+                     </bean>
+              </constructor-arg>
        </bean>
        <bean id="user_2" class="com.epam.entity.User">
               <constructor-arg value="2"/>
               <constructor-arg type="java.lang.String" value="Viet"/>
               <constructor-arg type="java.lang.String" value="Nguen"/>
               <constructor-arg type="java.lang.String" value="nguen@email.com"/>
+              <constructor-arg>
+                     <bean  class="java.util.Date">
+                     </bean>
+              </constructor-arg>
        </bean>
 
        <!--Create seats -->

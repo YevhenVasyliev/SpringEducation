@@ -1,38 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6f5c155-ae71-4a66-a2ba-50e8d5e5f3fe" name="Default" comment="Added aspect with counting when added new event">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/repository/counter/api/CounterForEventsDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/repository/counter/CounterForEventsDAOImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/service/counter/api/CounterForEventsService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/service/counter/CounterForEventsServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/util/EventCounter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/entity/Auditorium.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/entity/Auditorium.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/repository/auditorium/api/AuditoriumDAO.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/repository/auditorium/api/AuditoriumDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/repository/auditorium/AuditoriumDAOImpl.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/repository/auditorium/AuditoriumDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/service/auditorium/api/AuditoriumService.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/service/auditorium/api/AuditoriumService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/service/auditorium/AuditoriumServiceImpl.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/service/auditorium/AuditoriumServiceImpl.class" />
+    <list default="true" id="b6f5c155-ae71-4a66-a2ba-50e8d5e5f3fe" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/util/discount/BirthdayStrategy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/epam/util/discount/BirthdayStrategyTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/util/discount/api/DiscountStrategy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/util/discount/EveryTenthDiscountStrategy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/settingsForDiscount.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/service/booking/api/BookingService.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/service/booking/api/BookingService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/service/booking/BookingServiceImpl.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/service/booking/BookingServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/entity/Event.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/entity/Event.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/service/event/api/EventService.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/service/event/api/EventService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/service/event/EventServiceImpl.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/service/event/EventServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/Main.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/entity/Rating.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/entity/Rating.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/entity/Seat.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/entity/Seat.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/entity/Ticket.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/entity/Ticket.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/repository/ticket/api/TicketDAO.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/repository/ticket/api/TicketDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/repository/ticket/TicketDAOImpl.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/repository/ticket/TicketDAOImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/entity/User.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/entity/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/repository/user/api/UserDAO.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/repository/user/api/UserDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/repository/user/UserDAOImpl.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/repository/user/UserDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/service/user/api/UserService.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/service/user/api/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/service/user/UserServiceImpl.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/service/user/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/appConfig.xml" afterPath="$PROJECT_DIR$/build/resources/main/appConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/repository/booking/api/BookingDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/repository/booking/api/BookingDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/repository/booking/BookingDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/repository/booking/BookingDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/service/booking/api/BookingService.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/service/booking/api/BookingService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/service/booking/BookingServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/service/booking/BookingServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/entity/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/entity/User.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/appConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/appConfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practicalTask.iml" afterPath="$PROJECT_DIR$/practicalTask.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/appConfigTest.xml" afterPath="$PROJECT_DIR$/src/test/resources/appConfigTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="practicalTask.iws" />
@@ -50,7 +34,11 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/practicalTask$All_in_practicalTask.coverage" NAME="All in practicalTask Coverage Results" MODIFIED="1439198534080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/practicalTask$user_and_1_more.coverage" NAME="user and 1 more Coverage Results" MODIFIED="1438961687327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/practicalTask$com_epam_util_discount_in_practicalTask.coverage" NAME="com.epam.util.discount in practicalTask Coverage Results" MODIFIED="1439200080935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.epam.util.discount.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/practicalTask$com_epam_service_user_in_practicalTask.coverage" NAME="com.epam.service.user in practicalTask Coverage Results" MODIFIED="1438956079771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.epam.service.user.*</FILTER>
     </SUITE>
@@ -155,70 +143,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="appConfig.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/appConfig.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.551724">
-              <caret line="103" column="25" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/Main.java">
+      <file leaf-file-name="BirthdayStrategy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/util/discount/BirthdayStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EventDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/repository/event/EventDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#EventDAOImpl#0;class#EventDAOImpl#0" expanded="false" />
-                <element signature="e#601#602#0" expanded="true" />
-                <element signature="method#assignAuditorium#0;class#EventDAOImpl#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BookingDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/repository/booking/BookingDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#503#504#0" expanded="true" />
-                <element signature="e#550#551#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EventCounter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/util/EventCounter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -226,45 +155,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDAOImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/repository/user/UserDAOImpl.java">
+      <file leaf-file-name="UserServiceTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/service/user/UserServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-              <folding>
-                <element signature="method#UserDAOImpl#0;class#UserDAOImpl#0" expanded="false" />
-                <element signature="method#getUserById#0;class#UserDAOImpl#0" expanded="false" />
-                <element signature="method#getUserByEmail#0;class#UserDAOImpl#0" expanded="false" />
-                <element signature="method#getUsersByFirstName#0;class#UserDAOImpl#0" expanded="false" />
-                <element signature="method#remove#0;class#UserDAOImpl#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CounterForEventsDAOImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/repository/counter/CounterForEventsDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.58064514">
-              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.08928572">
+              <caret line="21" column="32" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#407#408#0" expanded="true" />
-                <element signature="e#432#433#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CounterForEventsServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/service/counter/CounterForEventsServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#518#519#0" expanded="true" />
-                <element signature="e#572#573#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -278,8 +175,8 @@
         <option value="package-info" />
         <option value="spring-beans.schema" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -613,15 +510,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/service/api/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/service/package-info.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/dao/user.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/dao/user/api.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/repositories/user/api/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/repositories/user/UserDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/repositories/ticket/api/TicketDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/service/ticket/api/TecketService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/repositories/ticket/TicketDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/service/event/api/EventServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/entity/Rating.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/service/event/api/EventService.java" />
@@ -633,26 +521,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/epam/entity/Seat.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/repository/booking/bookingDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/repository/booking/api/BookingDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/repository/booking/api/BookingDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/entity/Auditorium.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/repository/user/UserDAOImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/repository/user/UserDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/service/auditorium/AuditoriumServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/com.epam.repository.user/UserDAOImplTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/service/user/UserServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/service/booking/api/BookingService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/service/user/api/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/service/booking/BookingServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/repository/auditorium/AuditoriumDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/repository/event/api/EventDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/service/event/EventServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/service/user/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/appConfigTest.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/repository/event/EventDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/repository/booking/BookingDAOImpl.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/resources/appConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/repository/counter/caunterForEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/repository/counter/caunterForEventImpl.java" />
@@ -664,6 +545,22 @@
         <option value="$PROJECT_DIR$/src/main/java/com/epam/service/counter/CounterForEventsServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/util/EventCounter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/repository/counter/CounterForEventsDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/util/discount/DiscountStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/util/discount/api/DiscountStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/settingsForDiscounte.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/util/discount/EvryTenthDiscountStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/service/booking/api/BookingService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/repository/booking/api/BookingDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/service/booking/BookingServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/repository/booking/BookingDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/util/discount/EveryTenthDiscountStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/settingsForDiscount.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/com/epam/service/user/util/discount/BirthdayStrategyTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/util/discount/BirthdayStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/appConfig.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/appConfigTest.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/epam/util/discount/BirthdayStrategyTest.java" />
       </list>
     </option>
   </component>
@@ -687,7 +584,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="width" value="1924" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -902,54 +799,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="practicalTask" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="practicalTask" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.epam.repository.user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="practicalTask" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="practicalTask" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -979,112 +828,6 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="epam" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="practicalTask" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="practicalTask" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="epam" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="practicalTask" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="practicalTask" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="epam" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="counter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="practicalTask" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="practicalTask" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="epam" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="counter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -1100,11 +843,12 @@
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="Ev&#9;FILE&#9;file://D:/myProjects/SpringEducation/practicalTask/src/main/java/com/epam/repository/event/EventDAOImpl.java&#10;Tick&#9;FILE&#9;file://D:/myProjects/SpringEducation/practicalTask/src/main/java/com/epam/repository/ticket/TicketDAOImpl.java&#10;Userser&#9;FILE&#9;file://D:/myProjects/SpringEducation/practicalTask/src/main/java/com/epam/service/user/api/UserService.java&#10;User&#9;FILE&#9;file://D:/myProjects/SpringEducation/practicalTask/src/main/java/com/epam/repository/user/UserDAOImpl.java&#10;Cale&#9;PSI&#9;JAVA://java.util.Calendar&#10;Audi&#9;PSI&#9;JAVA://com.epam.entity.Auditorium&#10;Au&#9;FILE&#9;file://D:/myProjects/SpringEducation/practicalTask/src/main/java/com/epam/entity/Auditorium.java&#10;Times&#9;PSI&#9;JAVA://java.security.Timestamp&#10;Ti&#9;PSI&#9;JAVA://com.epam.entity.Ticket" />
+    <property name="SearchEverywhereHistoryKey" value="User&#9;FILE&#9;file://D:/myProjects/SpringEducation/practicalTask/src/main/java/com/epam/entity/User.java&#10;Ev&#9;FILE&#9;file://D:/myProjects/SpringEducation/practicalTask/src/main/java/com/epam/repository/event/EventDAOImpl.java&#10;Tick&#9;FILE&#9;file://D:/myProjects/SpringEducation/practicalTask/src/main/java/com/epam/repository/ticket/TicketDAOImpl.java&#10;Userser&#9;FILE&#9;file://D:/myProjects/SpringEducation/practicalTask/src/main/java/com/epam/service/user/api/UserService.java&#10;Cale&#9;PSI&#9;JAVA://java.util.Calendar&#10;Audi&#9;PSI&#9;JAVA://com.epam.entity.Auditorium&#10;Au&#9;FILE&#9;file://D:/myProjects/SpringEducation/practicalTask/src/main/java/com/epam/entity/Auditorium.java&#10;Times&#9;PSI&#9;JAVA://java.security.Timestamp&#10;Ti&#9;PSI&#9;JAVA://com.epam.entity.Ticket" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/epam" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1114,7 +858,7 @@
       <recent name="D:\myProjects\SpringEducation\practicalTask\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.com.epam.util.discount in practicalTask">
     <configuration default="false" name="com.epam.repository.user in practicalTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1161,64 +905,71 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="user and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
+    <configuration default="false" name="BirthdayStrategy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.epam.util.discount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.epam.util.discount.BirthdayStrategy" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="practicalTask" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in practicalTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="practicalTask" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="pattern" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
+        <value defaultName="singleModule" />
       </option>
       <envs />
-      <patterns>
-        <pattern testClass="com.epam.repository.user" />
-        <pattern testClass="com.epam.service.user" />
-      </patterns>
+      <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="practicalTask [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="false" name="practicalTask [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
+    <configuration default="false" name="com.epam.util.discount in practicalTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.epam.util.discount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="practicalTask" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.epam.util.discount" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -1487,17 +1238,17 @@
       <item index="0" class="java.lang.String" itemvalue="Gradle.UserDAOImplTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.com.epam.repository.user in practicalTask" />
       <item index="2" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.user and 1 more" />
-      <item index="4" class="java.lang.String" itemvalue="Gradle.practicalTask [clean]" />
-      <item index="5" class="java.lang.String" itemvalue="Gradle.practicalTask [build]" />
+      <item index="3" class="java.lang.String" itemvalue="Application.BirthdayStrategy" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.All in practicalTask" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.com.epam.util.discount in practicalTask" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.com.epam.repository.user in practicalTask" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.practicalTask [build]" />
-        <item index="3" class="java.lang.String" itemvalue="Gradle.practicalTask [clean]" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.user and 1 more" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.com.epam.util.discount in practicalTask" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.All in practicalTask" />
+        <item index="3" class="java.lang.String" itemvalue="Application.BirthdayStrategy" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.com.epam.repository.user in practicalTask" />
       </list>
     </recent_temporary>
   </component>
@@ -1513,7 +1264,7 @@
       <updated>1438677412436</updated>
       <workItem from="1438677416352" duration="25558000" />
       <workItem from="1438875262178" duration="5701000" />
-      <workItem from="1438882946904" duration="27483000" />
+      <workItem from="1438882946904" duration="37737000" />
     </task>
     <task id="LOCAL-00001" summary="Change project settings. Added UserService tests">
       <created>1438957759208</created>
@@ -1521,11 +1272,17 @@
       <option name="project" value="LOCAL" />
       <updated>1438957759208</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added aspect with counting when added new event">
+      <created>1438970315891</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1438970315891</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58742000" />
+    <option name="totallyTimeSpent" value="68996000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1537,8 +1294,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16666667" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1549,11 +1306,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23160173" sideWeight="0.4936034" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21588486" sideWeight="0.78028166" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21620172" sideWeight="0.78028166" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55411255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19509594" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22854078" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21588486" sideWeight="0.2197183" order="3" side_tool="false" content_ui="tabs" />
@@ -1561,7 +1318,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39935064" sideWeight="0.49573562" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39935064" sideWeight="0.49573562" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1582,7 +1339,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Change project settings. Added UserService tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change project settings. Added UserService tests" />
+    <MESSAGE value="Added aspect with counting when added new event" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added aspect with counting when added new event" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1594,19 +1352,19 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/epam/repository/event/EventDAOImpl.java</url>
-          <line>27</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/epam/Main.java</url>
           <line>28</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/epam/util/discount/BirthdayStrategy.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="12" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1615,75 +1373,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/appConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/service/event/EventServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/entity/Auditorium.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="18" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
-          <folding>
-            <element signature="e#360#361#0" expanded="false" />
-            <element signature="e#385#386#0" expanded="false" />
-            <element signature="e#419#420#0" expanded="false" />
-            <element signature="e#447#448#0" expanded="false" />
-            <element signature="e#478#479#0" expanded="false" />
-            <element signature="e#505#506#0" expanded="false" />
-            <element signature="e#545#546#0" expanded="false" />
-            <element signature="e#577#578#0" expanded="false" />
-            <element signature="e#613#614#0" expanded="false" />
-            <element signature="e#641#642#0" expanded="false" />
-            <element signature="e#687#688#0" expanded="false" />
-            <element signature="e#721#722#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/entity/Seat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/entity/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="114" column="18" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/entity/Ticket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/repository/ticket/TicketDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1775,16 +1464,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/repository/booking/api/BookingDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.265625">
-          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/3.2.0.RELEASE/73d8d7cab4e34ead82722705b97171b308dc3bd3/spring-context-3.2.0.RELEASE-sources.jar!/org/springframework/context/support/ClassPathXmlApplicationContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33277026">
@@ -1838,24 +1517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/service/user/UserServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/service/booking/api/BookingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com.epam.repository.user/UserDAOImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1874,34 +1535,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/service/booking/BookingServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.32749325">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-            <element signature="e#1684#1685#0" expanded="true" />
-            <element signature="e#1731#1732#0" expanded="true" />
-            <element signature="e#1791#1792#0" expanded="true" />
-            <element signature="e#1818#1819#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/entity/Ticket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.41239893">
           <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/entity/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16037735">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1977,49 +1614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="28" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
-          <folding>
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-            <element signature="e#761#762#0" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
-            <element signature="e#898#899#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/repository/booking/BookingDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/appConfigTest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6686217">
-          <caret line="97" column="74" selection-start-line="97" selection-start-column="74" selection-end-line="97" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.0.0.RELEASE/faeab9c14a8c24993dd28179c1c20706c3d0ec0b/spring-aop-4.0.0.RELEASE-sources.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2036,28 +1630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/appConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.551724">
-          <caret line="103" column="25" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/repository/user/UserDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-          <folding>
-            <element signature="method#UserDAOImpl#0;class#UserDAOImpl#0" expanded="false" />
-            <element signature="method#getUserById#0;class#UserDAOImpl#0" expanded="false" />
-            <element signature="method#getUserByEmail#0;class#UserDAOImpl#0" expanded="false" />
-            <element signature="method#getUsersByFirstName#0;class#UserDAOImpl#0" expanded="false" />
-            <element signature="method#remove#0;class#UserDAOImpl#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/repository/counter/api/CounterForEventsDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16129032">
@@ -2071,16 +1643,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/util/EventCounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2104,14 +1666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/repository/event/EventDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2125,14 +1679,197 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/entity/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22580644">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/repository/user/UserDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding>
+            <element signature="method#UserDAOImpl#0;class#UserDAOImpl#0" expanded="false" />
+            <element signature="method#getUserById#0;class#UserDAOImpl#0" expanded="false" />
+            <element signature="method#getUserByEmail#0;class#UserDAOImpl#0" expanded="false" />
+            <element signature="method#getUsersByFirstName#0;class#UserDAOImpl#0" expanded="false" />
+            <element signature="method#remove#0;class#UserDAOImpl#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/service/booking/api/BookingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/repository/booking/api/BookingDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/service/booking/BookingServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1719#1720#0" expanded="true" />
+            <element signature="e#1764#1765#0" expanded="true" />
+            <element signature="e#1824#1825#0" expanded="true" />
+            <element signature="e#1866#1867#0" expanded="true" />
+            <element signature="e#2400#2401#0" expanded="true" />
+            <element signature="e#2464#2465#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/repository/booking/BookingDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#1036#1037#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/util/EventCounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/util/discount/api/DiscountStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/repository/counter/CounterForEventsDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58064514">
+        <state vertical-scroll-proportion="0.0">
           <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#407#408#0" expanded="true" />
             <element signature="e#432#433#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/util/discount/EveryTenthDiscountStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/settingsForDiscount.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.024926687">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6451613">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/util/discount/BirthdayStrategyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65102637">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="true" />
+            <element signature="e#1087#1088#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5483871">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/javaEnvironment/jdk/src.zip!/java/util/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.34164223">
+          <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/appConfigTest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56891495">
+          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/appConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3240469">
+          <caret line="29" column="32" selection-start-line="23" selection-start-column="14" selection-end-line="29" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/28e0ad201304e4a4abf999ca0570b7cffc352c3c/junit-4.11-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3240469">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/util/discount/BirthdayStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/service/user/UserServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08928572">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,5 +1,7 @@
 package com.epam.entity;
 
+import java.util.Date;
+
 /**
  * @author Yevhen_Vasyliev
  */
@@ -9,12 +11,14 @@ public class User {
     private String firstName;
     private String lastName;
     private String email;
+    private Date birthday;
 
-    public User(long id, String firstName, String lastName, String email) {
+    public User(long id, String firstName, String lastName, String email, Date birthday) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.birthday = birthday;
     }
 
     public long getId() {
@@ -46,6 +50,14 @@ public class User {
         this.email = email;
     }
 
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -56,7 +68,8 @@ public class User {
         if (id != user.id) return false;
         if (firstName != null ? !firstName.equals(user.firstName) : user.firstName != null) return false;
         if (lastName != null ? !lastName.equals(user.lastName) : user.lastName != null) return false;
-        return !(email != null ? !email.equals(user.email) : user.email != null);
+        if (email != null ? !email.equals(user.email) : user.email != null) return false;
+        return !(birthday != null ? !birthday.equals(user.birthday) : user.birthday != null);
 
     }
 
@@ -66,6 +79,7 @@ public class User {
         result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
         result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
         result = 31 * result + (email != null ? email.hashCode() : 0);
+        result = 31 * result + (birthday != null ? birthday.hashCode() : 0);
         return result;
     }
 
@@ -76,6 +90,7 @@ public class User {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
+                ", birthday=" + birthday +
                 '}';
     }
 }
