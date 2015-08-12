@@ -10,9 +10,9 @@ import java.util.Date;
  */
 public interface EventDAO {
 
-    boolean add(Event event);
+    Event add(Event event);
 
-    void assignAuditorium(Event event, Auditorium auditorium, Date date);
+    void assignAuditorium(Event event);
 
     Event getById(long eventId);
 }

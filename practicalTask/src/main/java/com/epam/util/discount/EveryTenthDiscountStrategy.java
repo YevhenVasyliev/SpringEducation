@@ -5,6 +5,7 @@ import com.epam.entity.User;
 import com.epam.service.booking.api.BookingService;
 import com.epam.util.discount.api.DiscountStrategy;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,7 +15,9 @@ import java.util.Properties;
 /**
  * Created by Yevhen_Vasyliev on 10.08.2015.
  */
-public class EveryTenthDiscountStrategy implements DiscountStrategy {
+public class EveryTenthDiscountStrategy implements DiscountStrategy{
+
+    private final String discountName= "EVERY_TENTH_DISCOVERY";
 
     @Autowired
     private BookingService bookingService;
@@ -42,4 +45,5 @@ public class EveryTenthDiscountStrategy implements DiscountStrategy {
         }
         return 0;
     }
+
 }

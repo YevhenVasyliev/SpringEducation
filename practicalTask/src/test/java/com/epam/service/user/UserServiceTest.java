@@ -2,6 +2,7 @@ package com.epam.service.user;
 
 import com.epam.entity.User;
 import com.epam.service.user.api.UserService;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +31,11 @@ public class UserServiceTest {
     @Qualifier("user_1")
     private User user;
 
+    @Before
+    public void setUp() {
+        user.setBirthday(new java.util.Date(1436907600000L));
+    }
+
     @Test
     public void testGetByID() {
         User user = userService.getById(1);
@@ -37,27 +43,15 @@ public class UserServiceTest {
     }
 
     @Test
-    public void testGetByIdIfUserNotExist() {
-        User user = userService.getById(5);
-        assertNull(user);
-    }
-
-    @Test
     public void testGetByIdCheckingToNull() {
-        User user = userService.getById(2);
+        User user = userService.getById(1);
         assertNotNull(user);
     }
 
     @Test
     public void testGetUserByFirstName() {
-        List<User> users = userService.getUsersByFirstName("Yevhen");
+        List<User> users = userService.getUsersByFirstName(user);
         List<User> expectedUsers = Arrays.asList(this.user);
         assertEquals(expectedUsers, users);
-    }
-
-    @Test
-    public void testGetUserByFirstNameIfUserNotExist() {
-        List<User> users = userService.getUsersByFirstName("NotExist");
-        assertEquals(0, users.size());
     }
 }

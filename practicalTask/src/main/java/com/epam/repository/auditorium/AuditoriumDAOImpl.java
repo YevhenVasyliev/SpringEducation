@@ -3,10 +3,14 @@ package com.epam.repository.auditorium;
 import com.epam.entity.Auditorium;
 import com.epam.entity.Seat;
 import com.epam.repository.auditorium.api.AuditoriumDAO;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+import static com.epam.repository.auditorium.AuditoriumSQLQuery.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * @author Yevhen_Vasyliev
@@ -14,51 +18,29 @@ import java.util.List;
 @Repository
 public class AuditoriumDAOImpl implements AuditoriumDAO {
 
-    private List<Auditorium> auditoriums;
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
 
-    public AuditoriumDAOImpl() {
-    }
+    @Autowired
+    private AuditoriumMapper auditoriumMapper;
 
-    public AuditoriumDAOImpl(List<Auditorium> auditoriums) {
-        this.auditoriums = auditoriums;
-    }
+    @Autowired
+    private SeatMapper seatMapper;
 
     @Override
     public List<Auditorium> getAuditoriums() {
-        return new ArrayList<>(auditoriums);
+        return jdbcTemplate.query(SELECT_ALL_AUDITORIUMS, auditoriumMapper);
     }
 
     @Override
     public List<Seat> getSeatsNumber(long auditoriumId) {
-        for (Auditorium auditorium : auditoriums) {
-            if (auditorium.getId() == auditoriumId) {
-                return auditorium.getSeats();
-            }
-        }
-        return null;
+        return jdbcTemplate.query(SELECT_ALL_SEATS, seatMapper, auditoriumId);
     }
 
     @Override
     public List<Seat> getVipSeats(long auditoriumId) {
-        List<Seat> seats = new ArrayList<>();
-        for (Auditorium auditorium : auditoriums) {
-            if (auditorium.getId() == auditoriumId) {
-                Seat seat = getVipSeat(auditorium);
-                if (seat != null) {
-                    seats.add(seat);
-                }
-            }
-        }
-        return seats;
-    }
-
-    private Seat getVipSeat(Auditorium auditorium) {
-        for (Seat seat : auditorium.getSeats()) {
-            if (seat.isVip()) {
-                return seat;
-            }
-        }
-        return null;
+        Object[] args = {auditoriumId, "VIP"};
+        return jdbcTemplate.query(SELECT_ALL_VIP_SEATS, seatMapper, args);
     }
 
 }

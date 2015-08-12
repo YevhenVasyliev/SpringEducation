@@ -7,11 +7,15 @@ import java.util.Date;
  */
 public class User {
 
-    private final long id;
+    private long id;
     private String firstName;
     private String lastName;
     private String email;
     private Date birthday;
+
+    public User() {
+
+    }
 
     public User(long id, String firstName, String lastName, String email, Date birthday) {
         this.id = id;
@@ -19,6 +23,10 @@ public class User {
         this.lastName = lastName;
         this.email = email;
         this.birthday = birthday;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public long getId() {
@@ -69,7 +77,7 @@ public class User {
         if (firstName != null ? !firstName.equals(user.firstName) : user.firstName != null) return false;
         if (lastName != null ? !lastName.equals(user.lastName) : user.lastName != null) return false;
         if (email != null ? !email.equals(user.email) : user.email != null) return false;
-        return !(birthday != null ? !birthday.equals(user.birthday) : user.birthday != null);
+        return !(birthday != null ? !(birthday.getTime() == (user.birthday).getTime()) : user.birthday != null);
 
     }
 

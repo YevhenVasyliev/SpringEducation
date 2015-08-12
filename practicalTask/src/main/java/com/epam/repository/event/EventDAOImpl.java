@@ -1,11 +1,13 @@
 package com.epam.repository.event;
 
-import com.epam.entity.Auditorium;
 import com.epam.entity.Event;
 import com.epam.repository.event.api.EventDAO;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import java.util.Date;
+import static com.epam.repository.event.EventSQLQuery.*;
+
 import java.util.List;
 
 /**
@@ -14,36 +16,30 @@ import java.util.List;
 @Repository
 public class EventDAOImpl implements EventDAO {
 
-    private List<Event> events;
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
+
+    @Autowired
+    private EventMapper eventMapper;
 
     public EventDAOImpl() {
     }
 
-    public EventDAOImpl(List<Event> events) {
-        this.events = events;
+    @Override
+    public Event add(Event event) {
+        int eventId = jdbcTemplate.update(ADD_EVENT, eventMapper, event);
+        event.setId(eventId);
+        return event;
     }
 
     @Override
-    public boolean add(Event event) {
-        return events.add(event);
-    }
-
-    @Override
-    public void assignAuditorium(Event event, Auditorium auditorium, Date date) {
-        Event requiredEvent = getById(event.getId());
-        if (requiredEvent != null) {
-            requiredEvent.setAuditorium(auditorium);
-            requiredEvent.setStartDate(date);
-        }
+    public void assignAuditorium(Event event) {
+        Object[] args = {event.getAuditorium().getId(), event.getId()};
+        jdbcTemplate.update(UPDATE_EVENT_AUDITORIUM, args);
     }
 
     @Override
     public Event getById(long eventId) {
-        for (Event event : events) {
-            if (event.getId() == eventId) {
-                return event;
-            }
-        }
-        return null;
+        return jdbcTemplate.queryForObject(GET_EVENT_BY_ID, eventMapper, eventId);
     }
 }

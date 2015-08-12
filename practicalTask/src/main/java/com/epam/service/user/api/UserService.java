@@ -10,12 +10,14 @@ import java.util.List;
  */
 public interface UserService {
 
-    void register(User user);
+    User register(User user);
 
     void remove(User user);
 
     User getById(long id);
 
-    List<User> getUsersByFirstName(String firstName);
+    List<User> getUsersByFirstName(User user);
+
+    List<User> getUserByEmail(User user);
 
 }

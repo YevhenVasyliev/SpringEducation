@@ -15,6 +15,10 @@ public class Event {
     private Rating rating;
     private Auditorium auditorium;
 
+    public Event() {
+
+    }
+
     public Event(long id, String name, Date startDate, double price, Rating rating) {
         this.name = name;
         this.startDate = startDate;

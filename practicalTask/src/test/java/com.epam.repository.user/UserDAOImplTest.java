@@ -2,6 +2,7 @@ package com.epam.repository.user;
 
 import com.epam.entity.User;
 import com.epam.repository.user.api.UserDAO;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +10,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.sql.Date;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -29,16 +31,15 @@ public class UserDAOImplTest {
     @Qualifier("user_1")
     private User user;
 
+    @Before
+    public void setUp() {
+        user.setBirthday(new java.util.Date(1436907600000L));
+    }
+
     @Test
     public void testGetUserByIdNotNull() {
         User user = userDAO.getUserById(1);
         assertNotNull(user);
-    }
-
-    @Test
-    public void testGetUserByIdIfUserIsNotExist() {
-        User user = userDAO.getUserById(3);
-        assertNull(user);
     }
 
     @Test
@@ -49,8 +50,8 @@ public class UserDAOImplTest {
 
     @Test
     public void testGetUserByEmail() {
-        User user = userDAO.getUserByEmail("vasyliev@email.com");
-        assertEquals(this.user, user);
+        List<User> users = userDAO.getUserByEmail("vasyliev@email.com");
+        assertEquals(this.user, users.get(0));
     }
 
     @Test

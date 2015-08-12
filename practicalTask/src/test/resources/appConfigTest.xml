@@ -39,12 +39,12 @@
        <bean id="seat_1" class="com.epam.entity.Seat">
               <constructor-arg value="1"/>
               <constructor-arg value="1"/>
-              <constructor-arg value="true"/>
+              <constructor-arg value="VIP"/>
        </bean>
        <bean id="seat_2" class="com.epam.entity.Seat">
               <constructor-arg value="2"/>
               <constructor-arg value="2"/>
-              <constructor-arg value="false"/>
+              <constructor-arg value="NOT_VIP"/>
        </bean>
 
        <!--Create Auditorium-->
@@ -88,29 +88,4 @@
               <constructor-arg ref="user_1"/>
        </bean>
 
-       <!--Added to repository content for testing-->
-       <bean id="userDAO" class="com.epam.repository.user.UserDAOImpl">
-              <constructor-arg>
-                     <list>
-                            <ref bean="user_1"/>
-                            <ref bean="user_2"/>
-                     </list>
-              </constructor-arg>
-       </bean>
-
-       <bean id="auditoriumDAO" class="com.epam.repository.auditorium.AuditoriumDAOImpl">
-              <constructor-arg>
-                     <list>
-                            <ref bean="auditorium_1"/>
-                     </list>
-              </constructor-arg>
-       </bean>
-
-       <bean id="eventDAO" class="com.epam.repository.event.EventDAOImpl">
-              <constructor-arg>
-                     <list>
-                            <ref bean="event_1"/>
-                     </list>
-              </constructor-arg>
-       </bean>
 </beans>

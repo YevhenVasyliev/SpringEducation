@@ -19,5 +19,5 @@ public interface BookingDAO {
 
     boolean add(Ticket ticket);
 
-    public int getAllBookedTicketByUser(User user);
+    int getAllBookedTicketByUser(User user);
 }

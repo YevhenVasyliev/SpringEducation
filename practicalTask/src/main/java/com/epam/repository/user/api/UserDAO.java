@@ -11,12 +11,12 @@ public interface UserDAO {
 
     User getUserById(long id);
 
-    User getUserByEmail(String email);
+    List<User> getUserByEmail(String email);
 
     List<User> getUsersByFirstName(String firstName);
 
     void remove(long id);
 
-    void add(User user);
+    User add(User user);
 
 }

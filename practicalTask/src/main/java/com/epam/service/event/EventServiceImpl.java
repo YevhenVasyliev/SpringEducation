@@ -19,12 +19,14 @@ public class EventServiceImpl implements EventService {
     private EventDAO eventDAO;
 
     @Override
-    public boolean create(Event event) {
+    public Event create(Event event) {
         return eventDAO.add(event);
     }
 
     @Override
     public void assignAuditorium(Event event, Auditorium auditorium, Date date) {
-        eventDAO.assignAuditorium(event, auditorium, date);
+        event.setAuditorium(auditorium);
+        event.setStartDate(date);
+        eventDAO.assignAuditorium(event);
     }
 }

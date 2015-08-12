@@ -1,6 +1,5 @@
 package com.epam.service.user;
 
-import com.epam.entity.Ticket;
 import com.epam.entity.User;
 import com.epam.repository.ticket.api.TicketDAO;
 import com.epam.repository.user.api.UserDAO;
@@ -22,8 +21,8 @@ public class UserServiceImpl implements UserService {
     TicketDAO ticketDAO;
 
     @Override
-    public void register(User user) {
-        userDAO.add(user);
+    public User register(User user) {
+        return userDAO.add(user);
     }
 
     @Override
@@ -37,8 +36,13 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<User> getUsersByFirstName(String firstName) {
-        return userDAO.getUsersByFirstName(firstName);
+    public List<User> getUsersByFirstName(User user) {
+        return userDAO.getUsersByFirstName(user.getFirstName());
+    }
+
+    @Override
+    public List<User> getUserByEmail(User user) {
+        return userDAO.getUserByEmail(user.getEmail());
     }
 
 }

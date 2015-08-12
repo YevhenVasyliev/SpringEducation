@@ -11,6 +11,10 @@ public class Auditorium {
     private String name;
     private List<Seat> seats;
 
+    public Auditorium() {
+    }
+
+
     public Auditorium(long id, String name, List<Seat> seats) {
         this.id = id;
         this.name = name;

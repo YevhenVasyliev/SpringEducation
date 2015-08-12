@@ -13,6 +13,9 @@ public class Ticket {
     private Seat seat;
     private User user;
 
+    public Ticket() {
+    }
+
     public Ticket(long id, Date date, Seat seat, User user) {
         this.id = id;
         this.date = date;
@@ -44,11 +47,11 @@ public class Ticket {
         this.date = date;
     }
 
-    public Seat getSeats() {
+    public Seat getSeat() {
         return seat;
     }
 
-    public void setSeats(Seat seat) {
+    public void setSeat(Seat seat) {
         this.seat = seat;
     }
 

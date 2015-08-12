@@ -10,7 +10,7 @@ import java.util.Date;
  */
 public interface EventService {
 
-    boolean create(Event event);
+    Event create(Event event);
 
     void assignAuditorium(Event event, Auditorium auditorium, Date date);
 

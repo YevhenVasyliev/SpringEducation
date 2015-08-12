@@ -2,69 +2,53 @@ package com.epam.repository.user;
 
 import com.epam.entity.User;
 import com.epam.repository.user.api.UserDAO;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import javax.annotation.PostConstruct;
-import java.util.ArrayList;
 import java.util.List;
+
+import static com.epam.repository.user.UserSQLQuery.*;
 
 /**
  * @author Yevhen_Vasyliev
  */
 @Repository
-public class UserDAOImpl implements UserDAO{
+public class UserDAOImpl implements UserDAO {
 
-    private List<User> users;
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
+
+    @Autowired
+    private UserMapper userMapper;
 
     public UserDAOImpl() {
     }
 
-    public UserDAOImpl(List<User> users) {
-        this.users = users;
-    }
-
     @Override
     public User getUserById(long id) {
-        for (User user : users) {
-            if (user.getId() == id) {
-                return user;
-            }
-        }
-        return null;
+        return jdbcTemplate.queryForObject(SELECT_USERS_BY_ID, userMapper, id);
     }
 
     @Override
-    public User getUserByEmail(String email) {
-        for (User user : users) {
-            if (user.getEmail().equals(email)) {
-                return user;
-            }
-        }
-        return null;
+    public List<User> getUserByEmail(String email) {
+        return jdbcTemplate.query(SELECT_USERS_BY_EMAIL, userMapper, email);
     }
 
     @Override
     public List<User> getUsersByFirstName(String firstName) {
-        List<User> suitableUsers = new ArrayList<User>();
-        for (User user : users) {
-            if (user.getFirstName().equals(firstName)) {
-                suitableUsers.add(user);
-            }
-        }
-        return suitableUsers;
+        return jdbcTemplate.query(SELECT_USERS_BY_FIRST_NAME, userMapper, firstName);
     }
 
     @Override
     public void remove(long id) {
-        for (User user : users) {
-            if(user.getId() == id) {
-                users.remove(user);
-            }
-        }
+        jdbcTemplate.update(DELETE_USER_BY_ID, id);
     }
 
     @Override
-    public void add(User user) {
-        users.add(user);
+    public User add(User user) {
+        int userId =  jdbcTemplate.update(ADD_USER, userMapper, user);
+        user.setId(userId);
+        return user;
     }
 }

@@ -1,6 +1,6 @@
 package com.epam.repository.ticket.api;
 
-import com.epam.entity.Ticket;
+import com.epam.entity.*;
 
 import java.util.List;
 
@@ -10,5 +10,11 @@ import java.util.List;
 public interface TicketDAO {
 
     List<Ticket> getAllTicket();
+
+    List<UserTicket> getTicketsByDateAndUserAndSeats(Event event, List<Seat> seats, User user);
+
+    Ticket add(Ticket ticket);
+
+    List<UserTicket> getAllBookedTicketByUser(long userId);
 
 }

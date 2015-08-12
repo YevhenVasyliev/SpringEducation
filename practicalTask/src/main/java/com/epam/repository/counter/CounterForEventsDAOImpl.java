@@ -10,10 +10,7 @@ import org.springframework.stereotype.Repository;
 public class CounterForEventsDAOImpl implements CounterForEventsDAO {
 
     private long counter;
-
-    public CounterForEventsDAOImpl() {
-    }
-
+    
     @Override
     public void incrementCounter() {
         counter++;

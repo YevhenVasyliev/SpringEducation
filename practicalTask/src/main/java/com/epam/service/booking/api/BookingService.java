@@ -1,9 +1,6 @@
 package com.epam.service.booking.api;
 
-import com.epam.entity.Event;
-import com.epam.entity.Seat;
-import com.epam.entity.Ticket;
-import com.epam.entity.User;
+import com.epam.entity.*;
 
 import java.util.Date;
 import java.util.List;
@@ -17,7 +14,7 @@ public interface BookingService {
     /**
      * Returns price for ticket for specified event on specific date and time for specified seats.
      */
-    Map<Ticket, Double> getTicketPrice(Event event, Date date, List<Seat> seats, User user);
+    Map<UserTicket, Double> getTicketPrice(Event event, Date date, List<Seat> seats, User user);
 
     /**
      * Get all purchased tickets for event for specific date
@@ -26,9 +23,9 @@ public interface BookingService {
      */
     List<Ticket> getTicketsForEvent(Event event, Date date);
 
-    boolean bookTicket(Ticket ticket);
+    Ticket bookTicket(Ticket ticket);
 
     List<Ticket> getBookedTickets();
 
-    int getAllBookedTicketByUser(User user);
+    List<UserTicket> getAllBookedTicketByUser(User user);
 }

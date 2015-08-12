@@ -7,12 +7,15 @@ public class Seat {
 
     private long id;
     private long number;
-    private boolean isVip;
+    private SeatType seatType;
 
-    public Seat(long id, long number, boolean isVip) {
+    public Seat() {
+    }
+
+    public Seat(long id, long number, SeatType seatType) {
         this.id = id;
         this.number = number;
-        this.isVip = isVip;
+        this.seatType = seatType;
     }
 
     public long getId() {
@@ -31,12 +34,12 @@ public class Seat {
         this.number = number;
     }
 
-    public boolean isVip() {
-        return isVip;
+    public SeatType getSeatType() {
+        return seatType;
     }
 
-    public void setIsVip(boolean isVip) {
-        this.isVip = isVip;
+    public void setSeatType(SeatType seatType) {
+        this.seatType = seatType;
     }
 
     @Override
@@ -48,7 +51,7 @@ public class Seat {
 
         if (id != seat.id) return false;
         if (number != seat.number) return false;
-        return isVip == seat.isVip;
+        return seatType == seat.seatType;
 
     }
 
@@ -56,7 +59,16 @@ public class Seat {
     public int hashCode() {
         int result = (int) (id ^ (id >>> 32));
         result = 31 * result + (int) (number ^ (number >>> 32));
-        result = 31 * result + (isVip ? 1 : 0);
+        result = 31 * result + (seatType != null ? seatType.hashCode() : 0);
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Seat{" +
+                "id=" + id +
+                ", number=" + number +
+                ", seatType=" + seatType +
+                '}';
     }
 }

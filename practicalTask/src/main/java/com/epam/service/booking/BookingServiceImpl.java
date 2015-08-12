@@ -1,9 +1,6 @@
 package com.epam.service.booking;
 
-import com.epam.entity.Event;
-import com.epam.entity.Seat;
-import com.epam.entity.Ticket;
-import com.epam.entity.User;
+import com.epam.entity.*;
 import com.epam.repository.booking.api.BookingDAO;
 import com.epam.repository.ticket.api.TicketDAO;
 import com.epam.service.booking.api.BookingService;
@@ -21,21 +18,11 @@ public class BookingServiceImpl implements BookingService {
     @Autowired
     private TicketDAO ticketDAO;
 
-    @Autowired
-    private BookingDAO bookingDAO;
-
     @Override
-    public Map<Ticket, Double> getTicketPrice(Event event, Date date, List<Seat> seats, User user) {
-        List<Ticket> tickets= ticketDAO.getAllTicket();
-        List<Ticket> userTicket = new ArrayList<>();
-        for (Ticket ticket : tickets) {
-            if (ticket.getIdEvent() == event.getId() &&
-                    ticket.getDate().compareTo(date) == 0 &&
-                    ticket.getUser().equals(user)) {
-                userTicket.add(ticket);
-            }
-        }
-        return getPriceTicket(event, userTicket);
+    public Map<UserTicket, Double> getTicketPrice(Event event, Date date, List<Seat> seats, User user) {
+        event.setStartDate(date);
+        List<UserTicket> tickets= ticketDAO.getTicketsByDateAndUserAndSeats(event, seats, user);
+        return getPriceTicket(event, tickets);
     }
 
     @Override
@@ -51,20 +38,20 @@ public class BookingServiceImpl implements BookingService {
     }
 
     @Override
-    public boolean bookTicket(Ticket ticket) {
-        return bookingDAO.add(ticket);
+    public Ticket bookTicket(Ticket ticket) {
+        return ticketDAO.add(ticket);
     }
 
     @Override
     public List<Ticket> getBookedTickets() {
-        return bookingDAO.getAll();
+        return ticketDAO.getAllTicket();
     }
 
-    private Map<Ticket, Double> getPriceTicket(Event event, List<Ticket> tickets) {
-        Map<Ticket, Double> priceOfTickets = new HashMap<>();
+    private Map<UserTicket, Double> getPriceTicket(Event event, List<UserTicket> tickets) {
+        Map<UserTicket, Double> priceOfTickets = new HashMap<>();
         if (tickets != null) {
-            for (Ticket ticket : tickets) {
-                if (ticket.getSeats().isVip()) {
+            for (UserTicket ticket : tickets) {
+                if (ticket.getSeat().getSeatType().equals(SeatType.VIP)) {
                     priceOfTickets.put(ticket, event.getPriceVip());
                 }
                 priceOfTickets.put(ticket, event.getPrice());
@@ -73,8 +60,8 @@ public class BookingServiceImpl implements BookingService {
         return priceOfTickets;
     }
 
-    public int getAllBookedTicketByUser(User user){
-        return bookingDAO.getAllBookedTicketByUser(user);
+    public List<UserTicket> getAllBookedTicketByUser(User user){
+        return ticketDAO.getAllBookedTicketByUser(user.getId());
     }
 
 }

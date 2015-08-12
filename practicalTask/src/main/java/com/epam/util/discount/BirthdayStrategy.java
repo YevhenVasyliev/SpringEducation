@@ -3,6 +3,7 @@ package com.epam.util.discount;
 import com.epam.entity.Event;
 import com.epam.entity.User;
 import com.epam.util.discount.api.DiscountStrategy;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,6 +15,9 @@ import java.util.Properties;
  * Created by Yevhen_Vasyliev on 10.08.2015.
  */
 public class BirthdayStrategy implements DiscountStrategy {
+
+    private final String discountName= "BIRTHDAY_DISCOVERY";
+
 
     private int discount;
 
@@ -42,4 +46,5 @@ public class BirthdayStrategy implements DiscountStrategy {
         }
         return 0;
     }
+
 }

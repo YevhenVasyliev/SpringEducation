@@ -1,9 +1,8 @@
-package com.epam.util;
+package com.epam.util.aspects;
 
 import com.epam.service.counter.api.CounterForEventsService;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
