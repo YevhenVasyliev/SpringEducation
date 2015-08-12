@@ -2,84 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dedcd2c-7ee7-4101-b1c7-ada8b069d2e0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/repository/auditorium/AuditoriumMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/repository/auditorium/AuditoriumSQLQuery.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/util/aspects/DiscountAspect.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/epam/repository/event/EventDAOImplTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/repository/event/EventMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/repository/event/EventSQLQuery.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/repository/util/InsertQueryMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/repository/auditorium/SeatMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/entity/SeatType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/repository/ticket/TicketMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/repository/ticket/TicketSQLQuery.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/repository/user/UserMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/repository/user/UserSQLQuery.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/entity/UserTicket.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/epam/repository/ticket/UserTicketMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SpringEducation/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/database.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SpringEducation/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SpringEducation/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SpringEducation/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SpringEducation/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SpringEducation/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="D:\myProjects\SpringEducation\practicalTask\.idea\libraries\Gradle__commons_logging_commons_logging_1_1_1.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/entity/Auditorium.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/entity/Auditorium.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/repository/auditorium/api/AuditoriumDAO.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/repository/auditorium/api/AuditoriumDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/repository/auditorium/AuditoriumDAOImpl.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/repository/auditorium/AuditoriumDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/service/auditorium/api/AuditoriumService.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/service/auditorium/api/AuditoriumService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/service/auditorium/AuditoriumServiceImpl.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/service/auditorium/AuditoriumServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/service/booking/api/BookingService.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/service/booking/api/BookingService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/service/booking/BookingServiceImpl.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/service/booking/BookingServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/entity/Event.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/entity/Event.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/service/event/api/EventService.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/service/event/api/EventService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/service/event/EventServiceImpl.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/service/event/EventServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/Main.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/entity/Rating.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/entity/Rating.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/entity/Seat.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/entity/Seat.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/entity/Ticket.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/entity/Ticket.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/repository/ticket/api/TicketDAO.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/repository/ticket/api/TicketDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/repository/ticket/TicketDAOImpl.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/repository/ticket/TicketDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/entity/User.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/entity/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/repository/user/api/UserDAO.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/repository/user/api/UserDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/repository/user/UserDAOImpl.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/repository/user/UserDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/service/user/api/UserService.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/service/user/api/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/epam/service/user/UserServiceImpl.class" afterPath="$PROJECT_DIR$/build/classes/main/com/epam/service/user/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/entity/Auditorium.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/entity/Auditorium.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/repository/auditorium/AuditoriumDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/repository/auditorium/AuditoriumDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/util/discount/BirthdayStrategy.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/util/discount/BirthdayStrategy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/repository/booking/api/BookingDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/repository/booking/api/BookingDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/service/booking/api/BookingService.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/service/booking/api/BookingService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/service/booking/BookingServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/service/booking/BookingServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/repository/counter/CounterForEventsDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/repository/counter/CounterForEventsDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/entity/Event.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/entity/Event.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/repository/event/api/EventDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/repository/event/api/EventDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/repository/event/EventDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/repository/event/EventDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/service/event/api/EventService.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/service/event/api/EventService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/service/event/EventServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/service/event/EventServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/util/discount/EveryTenthDiscountStrategy.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/util/discount/EveryTenthDiscountStrategy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/entity/Seat.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/entity/Seat.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/entity/Ticket.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/entity/Ticket.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/repository/ticket/api/TicketDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/repository/ticket/api/TicketDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/repository/ticket/TicketDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/repository/ticket/TicketDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/entity/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/entity/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/repository/user/api/UserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/repository/user/api/UserDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/repository/user/UserDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/repository/user/UserDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com.epam.repository.user/UserDAOImplTest.java" afterPath="$PROJECT_DIR$/src/test/java/com.epam.repository.user/UserDAOImplTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/service/user/api/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/service/user/api/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/epam/service/user/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/service/user/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/epam/service/user/UserServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/epam/service/user/UserServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/appConfig.xml" afterPath="$PROJECT_DIR$/build/resources/main/appConfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/appConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/appConfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/appConfigTest.xml" afterPath="$PROJECT_DIR$/src/test/resources/appConfigTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practicalTask.iml" afterPath="$PROJECT_DIR$/practicalTask.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\myProjects\SpringEducation\practicalTask\src\main\java\com\epam\util\EventCounter.java" afterPath="$PROJECT_DIR$/src/main/java/com/epam/util/aspects/EventCounter.java" />
     </list>
     <ignored path="practicalTask.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -148,10 +71,9 @@
           <file leaf-file-name="BookingServiceImpl.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/service/booking/BookingServiceImpl.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.08928572">
-                  <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.8243243">
+                  <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
                   <folding>
-                    <element signature="e#1323#1324#0" expanded="true" />
                     <element signature="e#1367#1368#0" expanded="true" />
                     <element signature="e#1427#1428#0" expanded="true" />
                     <element signature="e#1474#1475#0" expanded="true" />
@@ -238,7 +160,7 @@
           <file leaf-file-name="TicketDAOImpl.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/repository/ticket/TicketDAOImpl.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8671875">
+                <state vertical-scroll-proportion="1.3125">
                   <caret line="51" column="27" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="27" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -1028,12 +950,19 @@
       <created>1439365022295</created>
       <option name="number" value="Default" />
       <updated>1439365022295</updated>
-      <workItem from="1439365025626" duration="22221000" />
+      <workItem from="1439365025626" duration="22319000" />
     </task>
+    <task id="LOCAL-00001" summary="Added jdbcTemplate">
+      <created>1439398273532</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1439398273532</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22221000" />
+    <option name="totallyTimeSpent" value="22319000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1049,7 +978,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.06503198" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32900432" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17643923" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1069,6 +998,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added jdbcTemplate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added jdbcTemplate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1391,10 +1324,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/service/booking/BookingServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08928572">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.8243243">
+          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
           <folding>
-            <element signature="e#1323#1324#0" expanded="true" />
             <element signature="e#1367#1368#0" expanded="true" />
             <element signature="e#1427#1428#0" expanded="true" />
             <element signature="e#1474#1475#0" expanded="true" />
