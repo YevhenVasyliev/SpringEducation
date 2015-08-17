@@ -16,15 +16,12 @@ import java.util.Properties;
  */
 public class BirthdayStrategy implements DiscountStrategy {
 
-    private final String discountName= "BIRTHDAY_DISCOVERY";
-
-
     private int discount;
 
     public BirthdayStrategy() {
         Properties property = new Properties();
-        try (InputStream inpStream = BirthdayStrategy.class.getResourceAsStream("/settingsForDiscount.properties")){
-            property.load(inpStream);
+        try (InputStream inputStream = BirthdayStrategy.class.getResourceAsStream("/settingsForDiscount.properties")){
+            property.load(inputStream);
             String discountFromProp = property.getProperty("birthdayDiscount");
             discount = Integer.parseInt(discountFromProp);
         } catch (IOException ex) {

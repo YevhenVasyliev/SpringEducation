@@ -17,8 +17,6 @@ import java.util.Properties;
  */
 public class EveryTenthDiscountStrategy implements DiscountStrategy{
 
-    private final String discountName= "EVERY_TENTH_DISCOVERY";
-
     @Autowired
     private BookingService bookingService;
 
@@ -26,8 +24,8 @@ public class EveryTenthDiscountStrategy implements DiscountStrategy{
 
     public EveryTenthDiscountStrategy() {
         Properties property = new Properties();
-        try (InputStream inpStream = BirthdayStrategy.class.getResourceAsStream("/settingsForDiscount.properties")){
-            property.load(inpStream);
+        try (InputStream inputStream = BirthdayStrategy.class.getResourceAsStream("/settingsForDiscount.properties")){
+            property.load(inputStream);
             String discountFromProp = property.getProperty("everyTenthDiscount");
             discount = Integer.parseInt(discountFromProp);
         } catch (IOException ex) {
@@ -39,7 +37,7 @@ public class EveryTenthDiscountStrategy implements DiscountStrategy{
 
     @Override
     public int getDiscount(User user, Event event, Date date) {
-        int countOfTicket = bookingService.getAllBookedTicketByUser(user);
+        int countOfTicket = bookingService.getAllBookedTicketByUser(user).size();
         if (countOfTicket != 0 && countOfTicket % 10 == 0) {
             return discount;
         }

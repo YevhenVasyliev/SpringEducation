@@ -27,29 +27,33 @@ public class DiscountAspect {
 
     @AfterReturning(pointcut = "execution(* com.epam.util.discount.api.DiscountStrategy.getDiscount(..))", returning = "discount")
     public void checkDiscount(JoinPoint joinPoint, int discount) throws InvocationTargetException, IllegalAccessException {
-        System.out.println("Aspect working!!!!");
-        User user = (User) joinPoint.getArgs()[0];
-        String discountName = ClassUtils.getShortName(joinPoint.getTarget().getClass());
-        if (discount != 0) {
-            updateUserDiscount(user, discountName);
+        System.out.println("Aspect is working!!!!");
+        if (joinPoint.getArgs()[0] instanceof User) {
+            User user = (User) joinPoint.getArgs()[0];
+
+            String discountName = ClassUtils.getShortName(joinPoint.getTarget().getClass());
+            if (discount != 0) {
+                updateUserDiscount(user, discountName);
+            }
+            System.out.println("Added user discount." + user);
+        } else {
+            System.out.println("Wrong type of method argument.");
+            throw new ClassCastException();
         }
     }
 
     private void updateUserDiscount(User user, String discountName) {
-        long userId = user.getId();
-        if (userDiscount.containsKey(userId)) {
-            Map<String, Integer> userDiscounts = userDiscount.get(userId);
-            updateDiscountByName(discountName, userDiscounts);
-        } else {
-            Map<String, Integer> userDiscounts = new HashMap<>();
+        if (userDiscount.containsKey(user.getId())) {
+            Map<String, Integer> userDiscounts = userDiscount.get(user.getId());
             updateDiscountByName(discountName, userDiscounts);
         }
+        updateDiscountByName(discountName, new HashMap<>());
     }
 
     private void updateDiscountByName(String discountName, Map<String, Integer> userDiscounts) {
         if (userDiscounts.containsKey(discountName)) {
             int countDiscount = userDiscounts.get(discountName);
-            userDiscounts.put(discountName, ++countDiscount);
+            userDiscounts.put(discountName, countDiscount + 1);
         } else {
             userDiscounts.put(discountName, 1);
         }

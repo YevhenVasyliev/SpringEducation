@@ -18,6 +18,7 @@ public class EventCounter {
 
     @Before("execution(* com.epam.repository.event.EventDAOImpl.add(*))")
     private void countAddedEvents() {
+        System.out.println("Aspect is worked.");
         counterForEventsService.increment();
         System.out.println("Event was added.");
     }
