@@ -47,7 +47,7 @@ public class DiscountAspect {
             Map<String, Integer> userDiscounts = userDiscount.get(user.getId());
             updateDiscountByName(discountName, userDiscounts);
         }
-        updateDiscountByName(discountName, new HashMap<>());
+        updateDiscountByName(discountName, new HashMap<String, Integer>());
     }
 
     private void updateDiscountByName(String discountName, Map<String, Integer> userDiscounts) {

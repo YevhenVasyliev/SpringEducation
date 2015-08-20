@@ -22,9 +22,6 @@ import java.util.Map;
 @Component
 public class AuditoriumMapper implements ResultSetExtractor<List<Auditorium>> {
 
-    @Autowired
-    private SeatMapper seatMapper;
-
     @Override
     public List<Auditorium> extractData(ResultSet rs) throws SQLException, DataAccessException {
         Map<Long, Auditorium> auditoriumMap = new HashMap<>();
@@ -36,7 +33,7 @@ public class AuditoriumMapper implements ResultSetExtractor<List<Auditorium>> {
             } else {
                 auditorium = getAuditorium(rs);
             }
-            Seat seat = seatMapper.extractData(rs).get(0);
+            Seat seat = mapRow(rs);
             seats = getSeats(auditorium);
             seats.add(seat);
         }
@@ -51,6 +48,14 @@ public class AuditoriumMapper implements ResultSetExtractor<List<Auditorium>> {
     }
 
     private List<Seat> getSeats(Auditorium auditorium) {
-        return auditorium.getSeats() != null ? auditorium.getSeats() : new ArrayList<>();
+        return auditorium.getSeats() != null ? auditorium.getSeats() : new ArrayList<Seat>();
+    }
+
+    private Seat mapRow(ResultSet rs) throws SQLException {
+        Seat seat = new Seat();
+        seat.setId(rs.getLong("seats.id"));
+        seat.setId(rs.getLong("seats.auditorium_id"));
+        seat.setSeatType(SeatType.valueOf(rs.getString("seats.type")));
+        return seat;
     }
 }
