@@ -17,8 +17,6 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     UserDAO userDAO;
-    @Autowired
-    TicketDAO ticketDAO;
 
     @Override
     public User register(User user) {

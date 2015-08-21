@@ -16,7 +16,7 @@
     <div class="col-lg-1"></div>
     <div class="col-lg-6">
         <h1>Welcome page!</h1>
-        <a href="<c:url value="user/loginform"/>">Linc</a>
+        <a href="<c:url value="user/registerForm"/>">Register form</a>
     </div>
 
 </div>
