@@ -19,6 +19,10 @@
         <a href="<c:url value="user/registerForm"/>">Register form</a>
     </div>
 
+    <form action="/getBookedTicket" method="GET" accept="application/pdf">
+
+    </form>
+
 </div>
 </body>
 </html>

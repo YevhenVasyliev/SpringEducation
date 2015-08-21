@@ -29,6 +29,10 @@
               <property name="suffix" value=".jsp"/>
        </bean>
 
+       <bean class="org.springframework.web.servlet.view.XmlViewResolver">
+              <property name="location" value="/WEB-INF/springPdfViews.xml"/>
+       </bean>
+
        <!--Create user-->
        <bean id="user_1" class="com.epam.entity.User">
               <constructor-arg value="1"/>
